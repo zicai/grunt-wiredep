@@ -12,43 +12,43 @@
   <section class="row">
     <div class="twelve columns">
       <hr>
-      <h1>sample app.</h1>
+      <h1>示例.</h1>
       <hr>
       <em>
-        how to get started with grunt-wiredep.
+        如何使用grunt-wiredep.
       </em>
       <hr>
 
-      <h2>what this is.</h2>
+      <h2>这是啥</h2>
       <hr>
       <p>
-        <a href="http://gruntjs.com">Grunt</a> is great.
+        <a href="http://gruntjs.com">Grunt</a> 棒极了.
       </p>
       <p>
-        <a href="http://bower.io">Bower</a> is great.
+        <a href="http://bower.io">Bower</a> 棒极了.
       </p>
       <p>
         
         <strong>现在他们可以很好地协同工作。</strong>
       </p>
       <p>
-        <code>grunt-wiredep</code> is a Grunt plug-in, which finds your components and injects them directly into the HTML file you specify.
+        <code>grunt-wiredep</code> 是一个grunt插件，它可以找到你的组件然后插入到指定的html文件中去。
       </p>
       <p>
-        Whether you're already using Bower and Grunt, or new to both, <code>grunt-wiredep</code> will be easy to plug in, as you can see in the steps below.
+        就像下面步骤所展示的，不论你是已经开始使用Bower和Grunt还是刚刚接触，<code>grunt-wiredep</code>都非常容易集成到项目中。
       </p>
       <p>
-        <strong><em>do note:</em></strong>
+        <strong><em>请注意:</em></strong>
         <em>
-          Bower is still a young little birdy, so things are changing rapidly. Authors of Bower components must follow certain conventions and best practices in order for this plug-in to be as accurate as possible. It's not a perfect world out there, so needless to say, some Bower components may not work as well as others.
+          Bower还很年轻，所以变化非常快。要想让<code>grunt-wiredep</code>正常工作，bower组件的作者必须遵循特定的约定和最佳实践。不用说，一些bower组件可能不能被正常的注入。
         </em>
       </p>
 
       <hr><hr>
-      <h3>first.</h3>
+      <h3>首先</h3>
       <hr>
       <p>
-        To use <a href="http://bower.io">Bower</a> for dependencies, include a comment block in your HTML file:
+        要使用<a href="http://bower.io">Bower</a>相关的依赖, 在你的html文件中插入一个注释块：
       </p>
       <pre>
   &lt!-- bower:js -->
@@ -57,10 +57,10 @@
 
 
       <hr><hr>
-      <h3>then.</h3>
+      <h3>接下来</h3>
       <hr>
       <p>
-        <a href="http://gruntjs.com">Grunt</a> and <a href="http://github.com/stephenplusplus/grunt-wiredep">grunt-wiredep</a> will do the rest! Grab 'em!
+        剩下的就交给<a href="http://gruntjs.com">Grunt</a> 和 <a href="http://github.com/stephenplusplus/grunt-wiredep">grunt-wiredep</a> 。先安装它们：
       </p>
       <pre>
   npm install <code>grunt-wiredep</code> --save-dev
@@ -68,10 +68,10 @@
 
 
       <hr><hr>
-      <h3>now.</h3>
+      <h3>现在</h3>
       <hr>
       <p>
-        Flip over to your Gruntfile, and add in the following:
+        打开你的Gruntfile，加入下面的代码：
       </p>
       <pre>
   grunt.loadNpmTasks('grunt-wiredep');
@@ -87,19 +87,19 @@
 
 
       <hr><hr>
-      <h3>so.</h3>
+      <h3>接下来</h3>
       <hr>
       <p>
-        Let's say your app needed jQuery to help it reach maximum awesomeness.
+        假设你的应用需要用到jQuery
       </p>
       <p>
-        Install jQuery as usual... with Bower.
+        像往常一样，通过bower安装jQuery
       </p>
       <pre>
   bower install jquery --save
       </pre>
       <p>
-        Then just go over to your terminal, and slap:
+        然后打开命令行，输入：
       </p>
       <pre>
   grunt <code>wiredep</code>
@@ -107,10 +107,10 @@
 
 
       <hr><hr>
-      <h3>finally.</h3>
+      <h3>最后</h3>
       <hr>
       <p>
-        Go check out your HTML file. It should look like:
+        查看你的html文件，应该类似于下面：
       </p>
       <pre>
   &lt;!-- bower:js -->
